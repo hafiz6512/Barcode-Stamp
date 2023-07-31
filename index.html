@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--[if gte mso 9]><xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="telephone=no">
+
+
+    <title>Card Preloader | HTML</title>
+
+    <style>
+        body{
+            min-height: 100vh;
+            width: 100%;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            font-family: Arial;
+        }
+        .barcode_stamp{
+            position: relative;
+            height: 192px;
+            width: 192px;
+            display: block;
+            background: #fcfcfc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .barcode_tracking_info{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 3px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .barcode-footer{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            box-sizing: border-box;
+            width: 100%;
+            column-gap: 10px;
+        }
+        .barcode-pid{
+            position: absolute;
+            left: -28px;
+            top: 28px;
+            transform: rotate(-90deg);
+        }
+        .barcode-date{
+            position: absolute;
+            right: -34px;
+            top: 20px;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="barcode_stamp" style="background: #fcfcfc;position: relative;display: block;width: 192px;height: 192px;padding: 10px;box-sizing: border-box;">
+        <span style="display: block;padding-bottom: 5px;width: 100%;text-align: center;font-family: Arial;font-size: 14px;font-weight:bold;line-height: 16px;">HAJ - 1444</span>
+        <p style="margin: 0 0 5px;display: block;text-align: left;font-family: Arial;font-size: 10px;font-weight:normal;line-height: 14px;">Ismat Ara Begum <br> Passport No: A02541203</p>
+        <p style="margin: 0 0 5px;display: inline-block;text-align: left;font-family: Arial;font-size: 10px;font-weight:normal;line-height: 14px;">Maharam PP: B00082671 ( Husband ) <br> Mah Name: Md. Ashraful Islam</p>
+
+        <div class="barcode_tracking_info" style="position: relative;box-sizing: border-box;padding: 3px 20px;text-align: center;width: 100%;">
+            <span style="display: inline-block;width:100%;text-align: center;font-family: Arial;font-size: 12px;font-weight:normal;line-height: 16px;">Unit: 72848 (9)</span>
+            <span style="display: block;text-align: center;font-family: Arial;font-size: 10px;font-weight:normal;line-height: 14px;margin-bottom: 2px;">Tracking No.</span>
+            <div style="display: inline-block;width: 100%;text-align: center;margin-bottom: 2px;">
+                <img src="barcode-img.png" alt="barcode" width="140" height="20" style="display:block;max-width: 100%;">
+            </div>
+            <span style="display: block;text-align: center;font-family: Arial;font-size: 10px;font-weight:normal;line-height: 14px;">N26B4AA59B5</span>
+
+            <span class="barcode-pid" style="display: inline-block;font-family: Arial;font-size: 11px;color: #000;font-weight: bold;white-space: nowrap;">PID:7284802</span>
+            <span class="barcode-date" style="display: inline-block;font-family: Arial;font-size: 10px;color: #000;font-weight: normal;white-space: nowrap;">6/5/2023 12:37.47</span>
+        </div>
+
+        <div class="barcode-footer" style="width: 100%;box-sizing: border-box;">
+            <a style="display:inline-block;color:#000;text-decoration: none;text-align: left;font-family: Arial;font-size: 10px;font-weight:normal;line-height: 12px;" href="https://prp.pilgrimdb.org">https://prp.pilgrimdb.org</a>
+            <img src="ba-logo.png" alt="BA" width="40" height="15" style="display:inline-block;width: 40px;height: 15px;margin-left: 10px;">
+        </div>
+    </div>
+
+</body>
+</html>
